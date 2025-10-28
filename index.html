@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Son of Ma - Music & Sound Healing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        @keyframes ripple-effect {
+            0% {
+                background-size: 200% 200%;
+            }
+            50% {
+                background-size: 500% 500%;
+            }
+            100% {
+                background-size: 200% 200%;
+            }
+        }
+        @keyframes hue-cycle {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+        .psychedelic-bg {
+            background: radial-gradient(circle at center, #ff6b6b, #ffc048, #f9f871, #45b7d1, #8b5cf6, #ec4899, #ff6b6b);
+            background-size: 200% 200%;
+            background-position: center;
+            animation: ripple-effect 6s ease-in-out infinite, hue-cycle 10s linear infinite;
+        }
+        .text-glow-subtle {
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+        .text-glow-strong {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(224, 179, 255, 0.7), 0 0 30px rgba(179, 222, 255, 0.7);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="font-inter">
+    <div id="root"></div>
+</body>
+</html>
