@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/your-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Son of Ma - Music & Sound Healing</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,6 +35,13 @@
                 filter: hue-rotate(360deg);
             }
         }
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fade-in 0.5s ease-out forwards;
+        }
         .psychedelic-bg {
             background: radial-gradient(circle at center, #ff6b6b, #ffc048, #f9f871, #45b7d1, #8b5cf6, #ec4899, #ff6b6b);
             background-size: 200% 200%;
@@ -53,12 +60,14 @@
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
   }
 }
 </script>
 </head>
 <body class="font-inter">
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>

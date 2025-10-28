@@ -28,7 +28,7 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
             </section>
             
             <div className="relative z-10 bg-black/50 backdrop-blur-xl rounded-t-3xl shadow-2xl shadow-purple-500/10">
-                <main className="container mx-auto px-6 pt-12 md:pt-20 space-y-16 pb-16 md:pb-24">
+                <main className="container mx-auto px-6 pt-12 md:pt-20 space-y-24 md:space-y-32 pb-16 md:pb-24">
                     <section id="sound-healing-intro" className="text-center max-w-3xl mx-auto">
                         <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-6 text-glow-strong">Harmonize Your Being</h2>
                         <p className="text-gray-200 leading-relaxed text-lg mb-4">
