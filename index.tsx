@@ -16,7 +16,16 @@ window.addEventListener('unhandledrejection', (event) => {
 const rootElement = document.getElementById('root');
 if (!rootElement) {
   console.error("Could not find root element");
-  document.body.innerHTML = '<div style="padding: 20px; font-family: sans-serif;"><h1>Error</h1><p>Could not find root element to mount to</p></div>';
+  const errorDiv = document.createElement('div');
+  errorDiv.style.padding = '20px';
+  errorDiv.style.fontFamily = 'sans-serif';
+  const title = document.createElement('h1');
+  title.textContent = 'Error';
+  const message = document.createElement('p');
+  message.textContent = 'Could not find root element to mount to';
+  errorDiv.appendChild(title);
+  errorDiv.appendChild(message);
+  document.body.appendChild(errorDiv);
   throw new Error("Could not find root element to mount to");
 }
 
@@ -29,5 +38,17 @@ try {
   );
 } catch (error) {
   console.error('Error rendering app:', error);
-  rootElement.innerHTML = '<div style="padding: 20px; font-family: sans-serif;"><h1>Error</h1><p>Failed to render application</p><pre>' + String(error) + '</pre></div>';
+  const errorDiv = document.createElement('div');
+  errorDiv.style.padding = '20px';
+  errorDiv.style.fontFamily = 'sans-serif';
+  const title = document.createElement('h1');
+  title.textContent = 'Error';
+  const message = document.createElement('p');
+  message.textContent = 'Failed to render application';
+  const errorText = document.createElement('pre');
+  errorText.textContent = error instanceof Error ? error.message : String(error);
+  errorDiv.appendChild(title);
+  errorDiv.appendChild(message);
+  errorDiv.appendChild(errorText);
+  rootElement.appendChild(errorDiv);
 }
