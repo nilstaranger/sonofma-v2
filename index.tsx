@@ -44,6 +44,12 @@ if (!rootElement) {
 }
 
 try {
+  // Remove loading indicator if it exists
+  const loadingIndicator = document.getElementById('loading-indicator');
+  if (loadingIndicator) {
+    loadingIndicator.remove();
+  }
+  
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <React.StrictMode>
