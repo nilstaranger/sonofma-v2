@@ -31,19 +31,24 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
             </div>
             {/* Simplified footer for landing page */}
             <footer className="w-full p-6">
-                <div className="flex justify-center items-center gap-6">
-                    <button 
-                        onClick={() => onNavigate('privacy')}
-                        className="text-white text-sm opacity-60 hover:opacity-100 hover:text-cyan-300 transition-all duration-300 underline"
-                    >
-                        Privacy Policy
-                    </button>
-                    <button 
-                        onClick={() => onNavigate('terms')}
-                        className="text-white text-sm opacity-60 hover:opacity-100 hover:text-cyan-300 transition-all duration-300 underline"
-                    >
-                        Terms of Service
-                    </button>
+                <div className="flex flex-col items-center gap-4">
+                    <div className="flex justify-center items-center gap-6">
+                        <button 
+                            onClick={() => onNavigate('privacy')}
+                            className="text-white text-sm opacity-60 hover:opacity-100 hover:text-cyan-300 transition-all duration-300 underline"
+                        >
+                            Privacy Policy
+                        </button>
+                        <button 
+                            onClick={() => onNavigate('terms')}
+                            className="text-white text-sm opacity-60 hover:opacity-100 hover:text-cyan-300 transition-all duration-300 underline"
+                        >
+                            Terms of Service
+                        </button>
+                    </div>
+                    <p className="text-white text-xs opacity-60 text-center">
+                        Disclaimer (CA B&P Code § 2053.5): Nils Taranger II is not licensed by the State of California as a healing‑arts practitioner.
+                    </p>
                 </div>
             </footer>
         </div>

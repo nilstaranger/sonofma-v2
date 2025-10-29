@@ -41,6 +41,9 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                         Terms of Service
                     </button>
                 </div>
+                <p className="text-white text-xs opacity-60 mt-6">
+                    Disclaimer (CA B&P Code § 2053.5): Nils Taranger II is not licensed by the State of California as a healing‑arts practitioner.
+                </p>
             </div>
         </footer>
     );

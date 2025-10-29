@@ -116,6 +116,9 @@ const PrivacyPolicyPage: React.FC<PageProps> = ({ onBack }) => {
                  <footer className="bg-black/40 backdrop-blur-lg mt-0">
                     <div className="container mx-auto px-6 py-8 text-center">
                         <p className="text-white text-sm opacity-75">&copy; 2025 Son of Ma. All Rights Reserved.</p>
+                        <p className="text-white text-xs opacity-60 mt-4">
+                            Disclaimer (CA B&P Code § 2053.5): Nils Taranger II is not licensed by the State of California as a healing‑arts practitioner.
+                        </p>
                     </div>
                 </footer>
             </div>
