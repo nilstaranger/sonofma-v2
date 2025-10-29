@@ -5,9 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const isProd = mode === 'production';
-  // When deploying to GitHub Pages under https://<user>.github.io/sonofma-v2/
-  // the base must be the repo name path. Update '/sonofma-v2/' if you change repo name.
-  const base = isProd ? '/sonofma-v2/' : '/';
+  // Deployed to custom domain www.sonofma.com, so base path should be root
+  const base = '/';
 
   return {
     base,
