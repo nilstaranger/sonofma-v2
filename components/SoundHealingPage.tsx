@@ -68,7 +68,7 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                             </a>
                             <button
                                 onClick={() => onNavigate('music')}
-                                className="inline-block font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full border-2 border-cyan-200/50 shadow-lg shadow-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300"
+                                className="font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full border-2 border-cyan-200/50 shadow-lg shadow-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300"
                             >
                                 Music
                             </button>
