@@ -32,9 +32,6 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                     <section id="sound-healing-intro" className="text-center max-w-3xl mx-auto">
                         <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-6 text-glow-strong">Harmonize Your Being</h2>
                         <p className="text-gray-200 leading-relaxed text-lg mb-4">
-                            Immerse yourself in the restorative power of sound.
-                        </p>
-                        <p className="text-gray-200 leading-relaxed text-lg mb-4">
                             Using vocal toning and the resonant frequencies of his guitar harp, Nils Taranger (Son of Ma) effortlessly weaves a sacred space for profound heart-opening experiences. This is an invitation to gently dissolve energetic blockages, soothe your nervous system, and reclaim your innate state of peace and clarity.
                         </p>
                         <p className="text-gray-200 leading-relaxed text-lg mb-4">
@@ -60,23 +57,22 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                     </section>
 
                      <section id="booking" className="text-center">
-                         <a
-                            href="https://my.practicebetter.io/#/6706cb6a6620743076e76e90/bookings?s=6706cc6f6620743076e7756e&step=date"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full border-2 border-pink-200/50 shadow-lg shadow-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300"
-                        >
-                            Discovery Call
-                        </a>
-                    </section>
-
-                    <section id="music-link" className="text-center">
-                        <button
-                            onClick={() => onNavigate('music')}
-                            className="font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full border-2 border-cyan-200/50 shadow-lg shadow-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300"
-                        >
-                            Music
-                        </button>
+                         <div className="flex flex-wrap justify-center gap-4">
+                             <a
+                                href="https://my.practicebetter.io/#/6706cb6a6620743076e76e90/bookings?s=6706cc6f6620743076e7756e&step=date"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full border-2 border-pink-200/50 shadow-lg shadow-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300"
+                            >
+                                Discovery Call
+                            </a>
+                            <button
+                                onClick={() => onNavigate('music')}
+                                className="inline-block font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full border-2 border-cyan-200/50 shadow-lg shadow-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300"
+                            >
+                                Music
+                            </button>
+                         </div>
                     </section>
                 </main>
                 <Footer onNavigate={onNavigate} />
