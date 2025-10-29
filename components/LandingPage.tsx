@@ -13,16 +13,16 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
                         Son of Ma
                     </h1>
                     <p className="mt-4 text-xl md:text-2xl lg:text-3xl text-glow-subtle">Choose your journey</p>
-                    <div className="mt-12 flex flex-col md:flex-row gap-6 md:gap-8">
+                    <div className="mt-12 flex flex-col md:flex-row gap-6 md:gap-12 justify-center items-center w-full max-w-3xl mx-auto">
                         <button
                             onClick={() => onNavigate('music')}
-                            className="font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full border-2 border-cyan-200/50 shadow-lg shadow-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300"
+                            className="font-orbitron text-xl md:text-2xl font-bold px-12 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full border-2 border-cyan-200/50 shadow-lg shadow-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300 w-full md:w-auto md:flex-1 max-w-xs"
                         >
                             Music
                         </button>
                         <button
                             onClick={() => onNavigate('soundHealing')}
-                            className="font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full border-2 border-pink-200/50 shadow-lg shadow-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300"
+                            className="font-orbitron text-xl md:text-2xl font-bold px-12 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full border-2 border-pink-200/50 shadow-lg shadow-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300 w-full md:w-auto md:flex-1 max-w-xs"
                         >
                             Sound Healing
                         </button>

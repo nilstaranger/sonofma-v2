@@ -32,13 +32,13 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                     <section id="sound-healing-intro" className="text-center max-w-3xl mx-auto">
                         <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-6 text-glow-strong">Harmonize Your Being</h2>
                         <p className="text-gray-200 leading-relaxed text-lg mb-4">
-                            Journey into the restorative power of sound. Using vocal toning and the resonant frequencies of a guitar harp, Son of Ma creates a sacred space for profound heart-opening experiences. This is an invitation to release energetic blockages, soothe the mind and body, and reconnect with your innate state of peace and clarity.
+                            Immerse yourself in the restorative power of sound.
                         </p>
                         <p className="text-gray-200 leading-relaxed text-lg mb-4">
-                            Inspired by the concept of heart coherence, these sound journeys are designed to align the heart, mind, and emotions. The specific vibrations can help guide you toward a harmonious state, fostering a deep sense of relaxation and inner balance.
+                            Using vocal toning and the resonant frequencies of his guitar harp, Nils Taranger (Son of Ma) effortlessly weaves a sacred space for profound heart-opening experiences. This is an invitation to gently dissolve energetic blockages, soothe your nervous system, and reclaim your innate state of peace and clarity. Inspired by the science of heart coherence, sound healing guides you toward a harmonious state of deep relaxation and inner balance.
                         </p>
                         <p className="text-gray-200 leading-relaxed text-lg">
-                           Offerings are available for private and group sessions, and you can book Son of Ma for your next sonic yoga class, wellness event, or healing retreat. Based in LA. Each session is a unique, co-creative journey tailored to your specific intentions and needs.
+                            Private and group sessions are available (in Los Angeles or remote). Bring this unique healing to your community by booking Nils for your sonic yoga class, wellness event, or retreat. Each co-creative journey is custom-tailored to your specific intentions and needs.
                         </p>
                     </section>
                     
