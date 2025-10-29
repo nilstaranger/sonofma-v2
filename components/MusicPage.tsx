@@ -33,9 +33,11 @@ const MusicPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                         <section id="about">
                             <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:items-start items-center">
                                 <div className="md:col-span-2">
-                                    <img src="https://raw.githubusercontent.com/nilstaranger/sonofma/main/sonofma%20bio%20pic%20web.jpg" 
-                                        alt="Son of Ma artist photo" 
-                                        className="rounded-lg shadow-2xl shadow-cyan-500/20 w-full transition-transform duration-300 hover:scale-105" />
+                                    <a href="https://open.spotify.com/artist/3kTRLun8cPz2ozNQhW9K5O?si=tuXW9qdfQTa-VG1BqK6hsA" target="_blank" rel="noopener noreferrer" aria-label="Visit Son of Ma on Spotify">
+                                        <img src="https://raw.githubusercontent.com/nilstaranger/sonofma/main/sonofma%20bio%20pic%20web.jpg" 
+                                            alt="Son of Ma artist photo" 
+                                            className="rounded-lg shadow-2xl shadow-cyan-500/20 w-full transition-transform duration-300 hover:scale-105 cursor-pointer" />
+                                    </a>
                                 </div>
                                 <div className="md:col-span-3">
                                     <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-6 text-glow-strong">A Euphoric Transmission</h2>
