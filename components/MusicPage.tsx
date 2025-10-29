@@ -3,7 +3,7 @@ import Footer from './Footer';
 
 interface PageProps {
     onBack: () => void;
-    onNavigate: (view: 'privacy' | 'terms') => void;
+    onNavigate: (view: 'privacy' | 'terms' | 'soundHealing') => void;
 }
 
 const BackButton: React.FC<{ onBack: () => void }> = ({ onBack }) => (
@@ -63,6 +63,15 @@ const MusicPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                                     title="Spotify Player for Son of Ma"
                                 ></iframe>
                             </div>
+                        </section>
+
+                        <section id="sound-healing-link" className="text-center">
+                            <button
+                                onClick={() => onNavigate('soundHealing')}
+                                className="font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full border-2 border-pink-200/50 shadow-lg shadow-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300"
+                            >
+                                Sound Healing
+                            </button>
                         </section>
                     </main>
                     <Footer onNavigate={onNavigate} />

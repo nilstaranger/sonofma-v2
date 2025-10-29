@@ -3,7 +3,7 @@ import Footer from './Footer';
 
 interface PageProps {
     onBack: () => void;
-    onNavigate: (view: 'privacy' | 'terms') => void;
+    onNavigate: (view: 'privacy' | 'terms' | 'music') => void;
 }
 
 const BackButton: React.FC<{ onBack: () => void }> = ({ onBack }) => (
@@ -35,7 +35,10 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                             Immerse yourself in the restorative power of sound.
                         </p>
                         <p className="text-gray-200 leading-relaxed text-lg mb-4">
-                            Using vocal toning and the resonant frequencies of his guitar harp, Nils Taranger (Son of Ma) effortlessly weaves a sacred space for profound heart-opening experiences. This is an invitation to gently dissolve energetic blockages, soothe your nervous system, and reclaim your innate state of peace and clarity. Inspired by the science of heart coherence, sound healing guides you toward a harmonious state of deep relaxation and inner balance.
+                            Using vocal toning and the resonant frequencies of his guitar harp, Nils Taranger (Son of Ma) effortlessly weaves a sacred space for profound heart-opening experiences. This is an invitation to gently dissolve energetic blockages, soothe your nervous system, and reclaim your innate state of peace and clarity.
+                        </p>
+                        <p className="text-gray-200 leading-relaxed text-lg mb-4">
+                            Inspired by the science of heart coherence, sound healing guides you towards a harmonious state of deep relaxation and inner balance.
                         </p>
                         <p className="text-gray-200 leading-relaxed text-lg">
                             Private and group sessions are available (in Los Angeles or remote). Bring this unique healing to your community by booking Nils for your sonic yoga class, wellness event, or retreat. Each co-creative journey is custom-tailored to your specific intentions and needs.
@@ -65,6 +68,15 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                         >
                             Discovery Call
                         </a>
+                    </section>
+
+                    <section id="music-link" className="text-center">
+                        <button
+                            onClick={() => onNavigate('music')}
+                            className="font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full border-2 border-cyan-200/50 shadow-lg shadow-cyan-500/30 hover:shadow-2xl hover:shadow-cyan-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-cyan-300"
+                        >
+                            Music
+                        </button>
                     </section>
                 </main>
                 <Footer onNavigate={onNavigate} />
