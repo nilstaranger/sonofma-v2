@@ -15,11 +15,35 @@
 <body class="font-inter">
     <div id="root"></div>
     <noscript>
-        <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-family: sans-serif; text-align: center; padding: 20px;">
+        <style>
+            .noscript-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                font-family: sans-serif;
+                text-align: center;
+                padding: 20px;
+            }
+            .noscript-container h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            .noscript-container p {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            .noscript-container p:last-child {
+                font-size: 1.2rem;
+            }
+        </style>
+        <div class="noscript-container">
             <div>
-                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Son of Ma</h1>
-                <p style="font-size: 1.5rem; margin-bottom: 2rem;">Music & Sound Healing</p>
-                <p style="font-size: 1.2rem;">Please enable JavaScript to view this website.</p>
+                <h1>Son of Ma</h1>
+                <p>Music & Sound Healing</p>
+                <p>Please enable JavaScript to view this website.</p>
             </div>
         </div>
     </noscript>
