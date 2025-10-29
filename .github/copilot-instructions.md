@@ -6,7 +6,7 @@ This is a React/TypeScript website for Son of Ma - Music & Sound Healing, built 
 ## Tech Stack
 - **Framework**: React 19.2.0 with TypeScript
 - **Build Tool**: Vite 6.2.0
-- **Styling**: Tailwind CSS 4.x with PostCSS
+- **Styling**: Tailwind CSS v4 (via @tailwindcss/postcss 4.1.16) with PostCSS and Autoprefixer
 - **Deployment**: GitHub Pages (deployed via GitHub Actions)
 
 ## Development Guidelines
