@@ -11,9 +11,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        #loading-indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #loading-indicator h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        #loading-indicator p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        #loading-indicator .help-text {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+        #loading-indicator ul {
+            list-style: disc inside;
+            padding: 0;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 1rem;
+        }
+        #loading-indicator li {
+            margin: 0.5rem 0;
+        }
+    </style>
 </head>
 <body class="font-inter">
-    <div id="root"></div>
+    <div id="root">
+        <!-- Loading indicator that will be replaced by React -->
+        <div id="loading-indicator">
+            <div>
+                <h1>Son of Ma</h1>
+                <p>Loading...</p>
+                <div class="help-text">If this message persists, please try:</div>
+                <ul>
+                    <li>Hard refresh (Ctrl+Shift+R or Cmd+Shift+R)</li>
+                    <li>Clear browser cache</li>
+                    <li>Disable browser extensions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <noscript>
         <style>
             .noscript-container {
