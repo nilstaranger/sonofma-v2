@@ -29,18 +29,18 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
             
             <div className="relative z-10 bg-black/50 backdrop-blur-xl rounded-t-3xl shadow-2xl shadow-purple-500/10">
                 <main className="container mx-auto px-6 pt-12 md:pt-20 space-y-24 md:space-y-32 pb-16 md:pb-24">
-                    <section id="sound-healing-intro" className="max-w-5xl mx-auto">
-                        <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-6 text-center text-glow-strong">Harmonize Your Being</h2>
-                        <div className="flex flex-col md:flex-row gap-8 items-center">
-                            <div className="flex-1 space-y-4">
-                                <p className="text-gray-200 leading-relaxed text-lg">
+                    <section id="sound-healing-intro" className="max-w-6xl mx-auto">
+                        <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center text-glow-strong">Harmonize Your Being</h2>
+                        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                            <div className="flex-1 space-y-6">
+                                <p className="text-gray-200 leading-relaxed text-lg md:text-xl">
                                     Using vocal toning and the resonant frequencies of his guitar harp, Nils Taranger (Son of Ma) effortlessly weaves a sacred space for profound heart-opening experiences. This is an invitation to gently dissolve energetic blockages, soothe your nervous system, and reclaim your innate state of peace and clarity.
                                 </p>
-                                <p className="text-gray-200 leading-relaxed text-lg">
+                                <p className="text-gray-200 leading-relaxed text-lg md:text-xl">
                                     Private and group sessions are available (in Los Angeles or remote). Bring this unique healing to your community by booking Nils for your sonic yoga class, wellness event, or retreat. Each co-creative journey is custom-tailored to your specific intentions and needs.
                                 </p>
                             </div>
-                            <div className="flex-shrink-0 w-full md:w-80">
+                            <div className="flex-shrink-0 w-full md:w-96 lg:w-[26rem]">
                                 <img 
                                     src="/nils guitar low.jpg" 
                                     alt="Nils with guitar during sound healing session"
