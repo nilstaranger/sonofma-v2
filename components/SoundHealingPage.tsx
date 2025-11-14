@@ -37,7 +37,7 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                                     Using vocal toning and the resonant frequencies of his guitar harp, Nils Taranger (Son of Ma) effortlessly weaves a sacred space for profound heart-opening experiences. This is an invitation to gently dissolve energetic blockages, soothe your nervous system, and reclaim your innate state of peace and clarity.
                                 </p>
                                 <p className="text-gray-200 leading-relaxed text-lg md:text-xl">
-                                    Private and group sessions are available (in Los Angeles or remote). Bring this unique healing to your community by booking Nils for your sonic yoga class, wellness event, or retreat. Each co-creative journey is custom-tailored to your specific intentions and needs.
+                                    Private sessions are available online or in person in LA.
                                 </p>
                             </div>
                             <div className="flex-shrink-0 w-full md:w-96 lg:w-[26rem]">
@@ -51,10 +51,9 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                     </section>
                     
                     <section id="video-experience" className="max-w-3xl mx-auto">
-                        <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-8 text-center text-glow-strong">Experience the Sound</h2>
                         <div className="rounded-lg overflow-hidden shadow-2xl shadow-purple-500/20">
                            <iframe 
-                                src="https://www.youtube-nocookie.com/embed/eS30h7t96tM" 
+                                src="https://www.youtube-nocookie.com/embed/Z9k_2-FhkBQ" 
                                 title="YouTube video player" 
                                 frameBorder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -67,12 +66,12 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                      <section id="booking" className="text-center">
                          <div className="flex flex-wrap justify-center gap-4">
                              <a
-                                href="https://my.practicebetter.io/#/6706cb6a6620743076e76e90/bookings?s=6706cc6f6620743076e7756e&step=date"
+                                href="https://l.bttr.to/AOLzi"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full border-2 border-pink-200/50 shadow-lg shadow-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300"
                             >
-                                Discovery Call
+                                Book now
                             </a>
                             <button
                                 onClick={() => onNavigate('music')}
