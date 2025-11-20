@@ -53,7 +53,7 @@ const SoundHealingPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                     <section id="video-experience" className="max-w-3xl mx-auto">
                         <div className="rounded-lg overflow-hidden shadow-2xl shadow-purple-500/20">
                            <iframe 
-                                src="https://www.youtube-nocookie.com/embed/Z9k_2-FhkBQ" 
+                                src="https://www.youtube-nocookie.com/embed/M_mBAH6pBzo" 
                                 title="YouTube video player" 
                                 frameBorder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
