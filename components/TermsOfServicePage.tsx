@@ -28,7 +28,7 @@ const TermsOfServicePage: React.FC<PageProps> = ({ onBack }) => {
             <div className="relative z-10 bg-black/50 backdrop-blur-xl rounded-t-3xl shadow-2xl shadow-purple-500/10">
                 <main className="container mx-auto px-6 py-12 md:py-16">
                     <div className="max-w-3xl mx-auto text-gray-200 leading-relaxed space-y-8">
-                        <p className="text-sm opacity-80">Effective Date: 10/28/25</p>
+                        <p className="text-sm opacity-80">Effective Date: December 3, 2025</p>
 
                         <div className="space-y-3">
                             <h2 className="font-orbitron text-2xl font-bold text-glow-strong">1. Introduction and Agreement</h2>
@@ -36,13 +36,8 @@ const TermsOfServicePage: React.FC<PageProps> = ({ onBack }) => {
                         </div>
 
                         <div className="space-y-3">
-                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">2. Nature of Site Content and Health Disclaimer</h2>
-                            <p>The Site provides information about music, sound, and sound healing services. This information is for general educational purposes only and is not a substitute for professional medical or mental health advice, diagnosis, or treatment.</p>
-                             <ul className="list-disc list-inside pl-4 space-y-2">
-                                <li><strong>No Medical Advice:</strong> We are not providing medical or health advice. Always seek the advice of a qualified health provider with any questions you may have regarding a medical condition.</li>
-                                <li><strong>No Therapeutic Relationship:</strong> Your use of this Site does not create a therapeutic or provider-patient relationship between you and us.</li>
-                                <li><strong>Third-Party Services:</strong> For booking professional sound healing appointments, you are directed to the third-party platform, PracticeBetter. Any professional relationship or service agreement is solely between you and the practitioner, and is subject to the terms and policies of that third-party platform. Sound healing services are intended for users aged 18 and older.</li>
-                            </ul>
+                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">2. Nature of Site Content</h2>
+                            <p>The Site provides information about music, artistic works, and related creative projects. This information is provided for general entertainment and informational purposes only.</p>
                         </div>
                         
                         <div className="space-y-3">
@@ -52,18 +47,16 @@ const TermsOfServicePage: React.FC<PageProps> = ({ onBack }) => {
                         
                          <div className="space-y-3">
                             <h2 className="font-orbitron text-2xl font-bold text-glow-strong">4. Limited User License and Site Use</h2>
-                             <p>You are granted a limited, non-exclusive, non-transferable license to access and use the Site for your personal, non-commercial use only. You agree not to:</p>
-                             <ul className="list-disc list-inside pl-4 space-y-2">
-                                <li><strong>Abuse the Site:</strong> Use the Site in any manner that could disable, overburden, or impair the Site.</li>
-                                <li><strong>Automated Access:</strong> Use any automated means (scripts, robots, etc.) to access, monitor, or copy any part of the Site without our prior written consent.</li>
-                                <li><strong>Security Interference:</strong> Introduce any viruses, malware, or other material that is malicious or technologically harmful.</li>
-                                <li><strong>Prohibited Content (if applicable):</strong> Use the Site to transmit, distribute, store, or display any material that is libelous, defamatory, abusive, or infringing on the intellectual property rights of others.</li>
-                            </ul>
+                             <p>You are granted a limited, non-exclusive, non-transferable license to access and use the Site for your personal, non-commercial use only. You agree not to:
+                            Abuse the Site: Use the Site in any manner that could disable, overburden, or impair the Site.
+                            Automated Access: Use any automated means (scripts, robots, etc.) to access, monitor, or copy any part of the Site without our prior written consent.
+                            Security Interference: Introduce any viruses, malware, or other material that is malicious or technologically harmful.
+                            Prohibited Content: Use the Site to transmit, distribute, store, or display any material that is libelous, defamatory, abusive, or infringing on the intellectual property rights of others.</p>
                         </div>
 
                         <div className="space-y-3">
                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">5. Intellectual Property</h2>
-                           <p>The Site and all of its content, features, and functionality (including all text, displays, images, video, and audio) are owned by us or our licensors and are protected by applicable intellectual property laws. You may not use any of our trademarks or logos without our prior written consent.</p>
+                           <p>The Site and all of its content, features, and functionality (including all text, displays, images, video, audio, and musical compositions) are owned by us or our licensors and are protected by applicable intellectual property laws. You may not use, reproduce, or distribute any of our trademarks, logos, or creative works without our prior written consent.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -73,7 +66,7 @@ const TermsOfServicePage: React.FC<PageProps> = ({ onBack }) => {
 
                         <div className="space-y-3">
                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">7. Disclaimer of Warranties</h2>
-                           <p>THE SITE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT ANY WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR THAT THE SITE WILL BE UNINTERRUPTED OR ERROR-FREE. WE SPECIFICALLY DISCLAIM ALL WARRANTIES RELATED TO THE ACCURACY, COMPLETENESS, OR HELPFULNESS OF ANY INFORMATION ON THE SITE.</p>
+                           <p>THE SITE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT ANY WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR THAT THE SITE WILL BE UNINTERRUPTED OR ERROR-FREE.</p>
                         </div>
                         
                         <div className="space-y-3">
@@ -91,12 +84,10 @@ const TermsOfServicePage: React.FC<PageProps> = ({ onBack }) => {
                            <h3 className="font-bold text-lg pt-2">Governing Law</h3>
                            <p>These Terms shall be governed by and construed in accordance with the laws of the State of California.</p>
                            <h3 className="font-bold text-lg pt-2">Dispute Resolution</h3>
-                           <p>Any dispute arising out of or relating to these Terms or the Site shall be resolved as follows:</p>
-                           <ul className="list-disc list-inside pl-4 space-y-2">
-                                <li><strong>Informal Negotiation:</strong> The parties shall first attempt to resolve the dispute through informal negotiations via email for a period of 30 days.</li>
-                                <li><strong>Binding Arbitration:</strong> If the dispute is not resolved informally, it shall be submitted to binding arbitration in Los Angeles County, California, administered by the American Arbitration Association ("AAA"). The judgment rendered by the arbitrator shall be final.</li>
-                                <li><strong>Small Claims Exception:</strong> Notwithstanding the foregoing, either party may bring an individual action in small claims court.</li>
-                            </ul>
+                           <p>Any dispute arising out of or relating to these Terms or the Site shall be resolved as follows:
+                           Informal Negotiation: The parties shall first attempt to resolve the dispute through informal negotiations via email for a period of 30 days.
+                           Binding Arbitration: If the dispute is not resolved informally, it shall be submitted to binding arbitration in Los Angeles County, California, administered by the American Arbitration Association ("AAA"). The judgment rendered by the arbitrator shall be final.
+                           Small Claims Exception: Notwithstanding the foregoing, either party may bring an individual action in small claims court.</p>
                         </div>
                         
                         <div className="space-y-3">
@@ -106,16 +97,13 @@ const TermsOfServicePage: React.FC<PageProps> = ({ onBack }) => {
                            <h3 className="font-bold text-lg pt-2">Changes to these Terms</h3>
                            <p>We may update these Terms from time to time by posting the new Terms on the Site. Your continued use of the Site after the posting of any modifications constitutes your acceptance of the revised Terms.</p>
                            <h3 className="font-bold text-lg pt-2">Contact</h3>
-                           <p>If you have any questions about these Terms, please contact us at <a href="mailto:nils@sonofma.com" className="text-cyan-400 hover:underline">nils@sonofma.com</a>.</p>
+                           <p>If you have any questions about these Terms, please contact us at nils@sonofma.com.</p>
                         </div>
                     </div>
                 </main>
                  <footer className="bg-black/40 backdrop-blur-lg mt-0">
                     <div className="container mx-auto px-6 py-8 text-center">
                         <p className="text-white text-sm opacity-75">&copy; 2025 Son of Ma. All Rights Reserved.</p>
-                        <p className="text-white text-xs opacity-60 mt-4">
-                            Disclaimer (CA B&P Code § 2053.5): Nils Taranger II is not licensed by the State of California as a healing‑arts practitioner.
-                        </p>
                     </div>
                 </footer>
             </div>

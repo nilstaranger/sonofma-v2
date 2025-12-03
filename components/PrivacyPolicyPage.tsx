@@ -28,7 +28,7 @@ const PrivacyPolicyPage: React.FC<PageProps> = ({ onBack }) => {
             <div className="relative z-10 bg-black/50 backdrop-blur-xl rounded-t-3xl shadow-2xl shadow-purple-500/10">
                 <main className="container mx-auto px-6 py-12 md:py-16">
                     <div className="max-w-3xl mx-auto text-gray-200 leading-relaxed space-y-6">
-                        <p className="text-sm opacity-80">Effective Date: 10/28/25</p>
+                        <p className="text-sm opacity-80">Effective Date: December 3, 2025</p>
 
                         <div className="space-y-2">
                             <h2 className="font-orbitron text-2xl font-bold text-glow-strong">1. Introduction</h2>
@@ -36,35 +36,36 @@ const PrivacyPolicyPage: React.FC<PageProps> = ({ onBack }) => {
                         </div>
 
                         <div className="space-y-2">
-                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">2. About Us and Our Services</h2>
-                            <p>sonofma.com provides information about music and sound healing services.</p>
-                            <p>For scheduling sound healing appointments and client communication, we use the third-party service PracticeBetter. When you click a link to schedule an appointment, you will be redirected to their site. We do not control their service, and your use of it is governed by their privacy policy, which you can review here: <a href="https://practicebetter.io/privacy" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">https://practicebetter.io/privacy</a>.</p>
+                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">2. About Us</h2>
+                            <p>sonofma.com is a portfolio website providing information about music and artistic works.</p>
                         </div>
                         
                         <div className="space-y-2">
                             <h2 className="font-orbitron text-2xl font-bold text-glow-strong">3. Information We Collect</h2>
                             <p>We have designed our site to collect minimal personal information. The information collected falls into two categories:</p>
                             <h3 className="font-bold text-lg pt-2">A. Information Collected Automatically (Log Data)</h3>
-                            <p>Our website is hosted by GitHub Pages. When you visit our Site, our web host (GitHub) automatically collects and logs certain information from your browser for security and operational purposes. This "Log Data" may include: Your IP address, Your browser type and version, The pages you visited on our Site, The time and date of your visit. This information is used by our host to maintain the security and integrity of the service. We only have access to this data in an aggregated or anonymized form.</p>
+                            <p>Our website is hosted by GitHub Pages. When you visit our Site, our web host (GitHub) automatically collects and logs certain information from your browser for security and operational purposes. This "Log Data" may include:
+                            Your IP address
+                            Your browser type and version
+                            The pages you visited on our Site
+                            The time and date of your visit
+                            This information is used by our host to maintain the security and integrity of the service. We only have access to this data in an aggregated or anonymized form.</p>
                             <h3 className="font-bold text-lg pt-2">B. Information You Voluntarily Provide</h3>
-                            <p>We do not collect any personal information (like your name, email, or health information) directly on the sonofma.com website. When you schedule an appointment, you do so through the PracticeBetter platform. Any information you provide, including sensitive personal health information, is collected directly by PracticeBetter and is subject to their privacy policy. We encourage you to review their policy before providing your information.</p>
+                            <p>We do not collect personal information (like your name or email) directly on the sonofma.com website (e.g., there are no account sign-ups or contact forms). If you choose to contact us via the email address provided on the site, we will use your email address solely to respond to your inquiry.</p>
                         </div>
                         
                         <div className="space-y-2">
                             <h2 className="font-orbitron text-2xl font-bold text-glow-strong">4. How We Use Your Information</h2>
-                             <p>We use the limited information we have access to for the following purposes:</p>
-                             <ul className="list-disc list-inside pl-4 space-y-1">
-                                <li><strong>Website Functionality:</strong> To ensure all features of the website work properly.</li>
-                                <li><strong>Website Improvement:</strong> To understand (in an aggregated way) how visitors interact with our site to improve user experience.</li>
-                                <li><strong>Security:</strong> To monitor for and prevent malicious activity and to maintain the security of our Site, in line with the data collected by our web host.</li>
-                            </ul>
-                            <p>We do not use your information for marketing emails or any other purpose.</p>
+                             <p>We use the limited information we have access to for the following purposes:
+                            Website Functionality: To ensure all features of the website work properly.
+                            Website Improvement: To understand (in an aggregated way) how visitors interact with our site to improve user experience.
+                            Security: To monitor for and prevent malicious activity and to maintain the security of our Site, in line with the data collected by our web host.
+                            We do not use your information for marketing emails or any other purpose.</p>
                         </div>
 
                         <div className="space-y-2">
                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">5. Cookies and Tracking Technologies</h2>
-                           <p>Our main website (sonofma.com) does not set or use any cookies for tracking or advertising.</p>
-                           <p>However, when you leave our site to use our third-party scheduling service, PracticeBetter, their platform will likely use cookies. These are typically "functional" or "necessary" cookies required to make their scheduling service work (for example, to remember who you are as you move through the booking steps). Please refer to the PracticeBetter privacy policy for details on their use of cookies.</p>
+                           <p>Our website (sonofma.com) does not set or use cookies for tracking or advertising.</p>
                         </div>
 
                         <div className="space-y-2">
@@ -74,22 +75,17 @@ const PrivacyPolicyPage: React.FC<PageProps> = ({ onBack }) => {
 
                         <div className="space-y-2">
                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">7. Sharing Your Information</h2>
-                           <p>We do not share, sell, or rent your personal information to any third parties. The only exceptions are:</p>
-                            <ul className="list-disc list-inside pl-4 space-y-1">
-                                <li><strong>PracticeBetter:</strong> As described, information you provide for scheduling is given directly to them.</li>
-                                <li><strong>Legal Requirements:</strong> We may disclose information if required to do so by law, such as to comply with a subpoena or other valid legal process.</li>
-                            </ul>
+                           <p>We do not share, sell, or rent your personal information to any third parties. The only exception is if we are required to do so by law, such as to comply with a subpoena or other valid legal process.</p>
                         </div>
 
                         <div className="space-y-2">
                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">8. Data Security</h2>
                            <p>We take reasonable measures to protect our Site. Our website is served using HTTPS (SSL encryption), which means all data transferred between your browser and our website is secure.</p>
-                           <p>Because we do not collect or store your sensitive personal information, we rely on the robust security measures of our partners: GitHub Pages (our web host) and PracticeBetter (our scheduling and client platform).</p>
                         </div>
 
                         <div className="space-y-2">
                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">9. Your Data Rights</h2>
-                           <p>Depending on your location (such as California or the European Economic Area), you may have certain rights regarding your personal information. These can include: Right to Access, Right to Rectification, Right to Erasure (Deletion). Since we do not collect personal information directly, most requests would need to be directed to PracticeBetter (for your client data) or our web host (regarding server logs). However, you can contact us at any time, and we will assist you in any way we can. We do not sell or "share" your personal information as defined by the California Consumer Privacy Act (CCPA).</p>
+                           <p>Depending on your location (such as California or the European Economic Area), you may have certain rights regarding your personal information. These can include the Right to Access, Right to Rectification, and Right to Erasure (Deletion). Since we do not collect personal information directly on the site, most data requests would need to be directed to our web host (regarding server logs). However, you can contact us at any time, and we will assist you in any way we can. We do not sell or "share" your personal information as defined by the California Consumer Privacy Act (CCPA).</p>
                         </div>
 
                         <div className="space-y-2">
@@ -104,7 +100,8 @@ const PrivacyPolicyPage: React.FC<PageProps> = ({ onBack }) => {
 
                         <div className="space-y-2">
                            <h2 className="font-orbitron text-2xl font-bold text-glow-strong">12. Contact Us</h2>
-                           <p>If you have any questions about this Privacy Policy, please contact us at: Email: <a href="mailto:nils@sonofma.com" className="text-cyan-400 hover:underline">nils@sonofma.com</a></p>
+                           <p>If you have any questions about this Privacy Policy, please contact us at:
+                           Email: nils@sonofma.com</p>
                         </div>
                         
                         <div className="space-y-2">
@@ -116,9 +113,6 @@ const PrivacyPolicyPage: React.FC<PageProps> = ({ onBack }) => {
                  <footer className="bg-black/40 backdrop-blur-lg mt-0">
                     <div className="container mx-auto px-6 py-8 text-center">
                         <p className="text-white text-sm opacity-75">&copy; 2025 Son of Ma. All Rights Reserved.</p>
-                        <p className="text-white text-xs opacity-60 mt-4">
-                            Disclaimer (CA B&P Code § 2053.5): Nils Taranger II is not licensed by the State of California as a healing‑arts practitioner.
-                        </p>
                     </div>
                 </footer>
             </div>

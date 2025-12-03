@@ -2,23 +2,13 @@ import React from 'react';
 import Footer from './Footer';
 
 interface PageProps {
-    onBack: () => void;
-    onNavigate: (view: 'privacy' | 'terms' | 'soundHealing') => void;
+    onNavigate: (view: 'privacy' | 'terms') => void;
 }
 
-const BackButton: React.FC<{ onBack: () => void }> = ({ onBack }) => (
-    <button onClick={onBack} className="absolute top-6 left-6 z-50 text-white bg-black/40 backdrop-blur-sm rounded-full p-3 hover:bg-white/20 transition-colors duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-    </button>
-);
-
-const MusicPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
+const MusicPage: React.FC<PageProps> = ({ onNavigate }) => {
     return (
         <div className="relative min-h-screen">
             <div className="relative z-10">
-                <BackButton onBack={onBack} />
                 <section className="flex items-center justify-center text-center min-h-screen p-4">
                     <div className="max-w-4xl mx-auto">
                         <h1 className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-wider text-glow-strong">
@@ -65,13 +55,27 @@ const MusicPage: React.FC<PageProps> = ({ onBack, onNavigate }) => {
                             </div>
                         </section>
 
-                        <section id="sound-healing-link" className="text-center">
-                            <button
-                                onClick={() => onNavigate('soundHealing')}
-                                className="font-orbitron text-xl md:text-2xl font-bold px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full border-2 border-pink-200/50 shadow-lg shadow-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300"
-                            >
-                                Sound Healing
-                            </button>
+                        <section id="acoustic-music">
+                            <div className="text-center">
+                                <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-8 text-glow-strong">Acoustic Music</h2>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:items-start items-center">
+                                <div className="md:col-span-1">
+                                    <img src="/nils guitar low.jpg" alt="Nils playing guitar" className="rounded-lg shadow-2xl shadow-cyan-500/20 w-full" />
+                                </div>
+                                <div className="md:col-span-1">
+                                    <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/M_mBAH6pBzo" 
+                                            frameBorder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                            allowFullScreen 
+                                            style={{position: 'absolute', top: '0', left: '0', width: '100%', height: '100%'}} 
+                                            title="Son of Ma - Acoustic Session">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                     </main>
                     <Footer onNavigate={onNavigate} />

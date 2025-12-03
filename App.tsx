@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import LandingPage from './components/LandingPage';
 import MusicPage from './components/MusicPage';
-import SoundHealingPage from './components/SoundHealingPage';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import TermsOfServicePage from './components/TermsOfServicePage';
 
-type View = 'landing' | 'music' | 'soundHealing' | 'privacy' | 'terms';
+type View = 'music' | 'privacy' | 'terms';
 
 const App: React.FC = () => {
-    const [view, setView] = useState<View>('landing');
+    const [view, setView] = useState<View>('music');
     const [isFading, setIsFading] = useState<boolean>(false);
 
     const handleNavigate = (newView: View) => {
@@ -23,17 +21,13 @@ const App: React.FC = () => {
     
     const renderContent = () => {
         switch (view) {
-            case 'music':
-                return <MusicPage onBack={() => handleNavigate('landing')} onNavigate={handleNavigate} />;
-            case 'soundHealing':
-                return <SoundHealingPage onBack={() => handleNavigate('landing')} onNavigate={handleNavigate} />;
             case 'privacy':
-                return <PrivacyPolicyPage onBack={() => handleNavigate('landing')} />;
+                return <PrivacyPolicyPage onBack={() => handleNavigate('music')} />;
             case 'terms':
-                return <TermsOfServicePage onBack={() => handleNavigate('landing')} />;
-            case 'landing':
+                return <TermsOfServicePage onBack={() => handleNavigate('music')} />;
+            case 'music':
             default:
-                return <LandingPage onNavigate={handleNavigate} />;
+                return <MusicPage onNavigate={handleNavigate} />;
         }
     };
 
